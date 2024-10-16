@@ -146,7 +146,6 @@ p {
     color: #000;
 }
 
-/* Mobile Styling */
 @media (max-width: 768px) {
     .container {
         display: flex;
@@ -160,9 +159,9 @@ p {
     .column {
         flex: 1; /* Divide height equally among columns */
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        justify-content: right;
+        align-items: right;
+        text-align: right;
         width: 100%; /* Full width for each column */
         padding: 10px;
     }
@@ -180,19 +179,19 @@ p {
 
     .coming-soon {
         font-size: 5vw; /* Adjust font size */
-        padding: 10px 0; /* Add padding to give it space */
+        padding: 5px 0; /* Add padding to give it space */
         background-color: #000;
         color: #fff;
         text-align: center;
         width: 100%;
-        margin-bottom: 10px; /* Space between "Coming Soon" and address */
+        margin-bottom: 20vh; /* Use relative margin to adjust dynamically */
     }
 
     .address {
         font-size: 3vw; /* Adjust font size for the address */
-        text-align: center;
+        text-align: right;
         width: 100%;
-        margin-top: 10px; /* Space between "Coming Soon" and address */
+        margin-top: 20vh; /* Use relative margin to adjust dynamically */
     }
 
     h1 {
