@@ -184,14 +184,14 @@ p {
         color: #fff;
         text-align: center;
         width: 100%;
-        margin-bottom: 20vh; /* Use relative margin to adjust dynamically */
+        margin-bottom: 40vh; /* Use relative margin to adjust dynamically */
     }
 
     .address {
         font-size: 3vw; /* Adjust font size for the address */
         text-align: right;
         width: 100%;
-        margin-top: 20vh; /* Use relative margin to adjust dynamically */
+        margin-top: 40vh; /* Use relative margin to adjust dynamically */
     }
 
     h1 {
