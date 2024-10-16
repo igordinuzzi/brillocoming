@@ -149,30 +149,60 @@ p {
 /* Mobile Styling */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        height: auto; /* Allow content to expand on mobile */
-    }
-
-    h1 {
-        font-size: 7vw;
-    }
-
-    .coming-soon {
-        font-size: 6vw;
-    }
-
-    .address {
-        font-size: 3vw;
-        text-align: center; /* Center the address on mobile */
-        margin-right: 0; /* Remove right margin */
-        width: 100%; /* Take full width to align center */
-    }
-
-    .address i {
-        font-size: 4vw;
+        display: flex;
+        flex-direction: column; /* Stack columns vertically */
+        height: 100vh; /* Full height of the viewport */
+        width: 100vw; /* Full width of the viewport */
+        padding: 0;
+        overflow: hidden;
     }
 
     .column {
-        height: auto; /* Allow columns to expand in height */
+        flex: 1; /* Divide height equally among columns */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%; /* Full width for each column */
+        padding: 10px;
+    }
+
+    /* Gradient specific styling */
+    .gradient {
+        background: linear-gradient(180deg, #C2FF04, #0177BF, #1E9CD7, #FF2AD0, #FE0633);
+        display: flex;
+        flex-direction: column; /* Stack "Coming Soon" and address vertically */
+        justify-content: center; /* Center them vertically */
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .coming-soon {
+        font-size: 5vw; /* Adjust font size */
+        padding: 10px 0; /* Add padding to give it space */
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px; /* Space between "Coming Soon" and address */
+    }
+
+    .address {
+        font-size: 3vw; /* Adjust font size for the address */
+        text-align: center;
+        width: 100%;
+        margin-top: 10px; /* Space between "Coming Soon" and address */
+    }
+
+    h1 {
+        font-size: 5vw; /* Shrink font size for better visibility */
+        line-height: 1.2;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 2.8vw;
+        margin-top: 5px;
     }
 }
